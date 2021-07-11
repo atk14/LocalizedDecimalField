@@ -1,6 +1,8 @@
 LocalizedDecimalField
 =====================
 
+[![Build Status](https://travis-ci.com/atk14/LocalizedDecimalField.svg?branch=master)](https://travis-ci.com/atk14/LocalizedDecimalField)
+
 Field for number with restricted count of digits and decimal places.
 
 This field accepts and renders localized numbers, e.g. "1 003,345".
