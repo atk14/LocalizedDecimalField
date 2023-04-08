@@ -2,6 +2,7 @@
 class LocalizedDecimalField extends DecimalField {
 
 	function clean($value){
+		$value = (string)$value;
 		$value = preg_replace('/\'/','',$value); // "123'456" -> "123456"
 
 		$decimal_point = Atk14Locale::DecimalPoint();
