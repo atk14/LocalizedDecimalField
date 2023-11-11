@@ -16,6 +16,6 @@ class LocalizedDecimalField extends DecimalField {
 
 	function format_initial_data($data){
 		$data = parent::format_initial_data($data);
-		return (string)Atk14Locale::FormatNumber($data);
+		return is_numeric($data) ? (string)Atk14Locale::FormatNumber($data) : (string)$data;
 	}
 }

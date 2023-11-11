@@ -48,6 +48,7 @@ class TcLocalizedDecimalField extends TcBase {
 		$this->assertTrue("-12,0"===$field->format_initial_data(-12));
 		$this->assertTrue(""===$field->format_initial_data(""));
 		$this->assertTrue(""===$field->format_initial_data(null));
+		$this->assertTrue("nonsence"===$field->format_initial_data("nonsence"));
 
 		$err = $this->assertInvalid("xxx");
 		$this->assertEquals("Enter a number.",$err);
